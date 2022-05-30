@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>csense.idea.swift-not-highlighter</id>
+    <name>Csense - Swift Not Highlighter</name>
+    <vendor email="csense@tvedesys.dk" url="https://github.com/csense-oss/idea-swift-not-highlighter">
+        Csense oss
+    </vendor>
+    <description>A plugin allowing you to customize highlighting of "not" and "!" alike in code</description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.appcode</depends>
+    <depends>com.intellij.modules.swift.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <annotator language="Swift"
+                   implementationClass="csense.swift.not.highlighter.NotHighlighter"
+        />
+        <applicationService
+                serviceImplementation="csense.swift.not.highlighter.settings.NotHighlighterSettings"/>
+        <applicationConfigurable
+                instance="csense.swift.not.highlighter.settings.NotHighlighterSettingsConfigurable"/>
+    </extensions>
+    <idea-version since-build="212"/>
+</idea-plugin>
