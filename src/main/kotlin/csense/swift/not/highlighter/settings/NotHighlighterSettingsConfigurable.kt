@@ -55,5 +55,5 @@ class NotHighlighterSettingsConfigurable : Configurable {
         ui = null
     }
 
-    override fun getDisplayName() = "Csense Kotlin Not Highlighter"
+    override fun getDisplayName() = "Csense Swift Not Highlighter"
 }

@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "csense-idea"
-version = "1.0"
+version = "1.1"
 
 repositories {
     mavenCentral()
@@ -44,7 +44,7 @@ tasks {
         changeNotes.set(
             """
                 <ul>
-                    <li>First release</li>
+                    <li>Fixed a bad name (code is still the same as in version 1.0)</li>
                 </ul>
               """
         )
@@ -54,5 +54,4 @@ tasks {
         jvmArgs("-Xms2G")
         jvmArgs("-Xmx8G")
     }
-
 }
